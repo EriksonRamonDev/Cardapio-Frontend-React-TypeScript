@@ -1,16 +1,13 @@
 import { useQuery } from "@tanstack/react-query";
-import axios from "axios";
+import axios, { AxiosPromise } from "axios";
 import { FoodData } from "../interface/FoodData";
 
 const API_URL = 'http://localhost:8080';
 
-const fetchData = async (): Promise<FoodData[]> => {
-    try {
-        const response = await axios.get(API_URL + "/food");
-        return response.data;
-    } catch (error) {
-        throw error;
-    }
+const fetchData = async (): AxiosPromisePromise<FoodData[]> => {
+    const response = axios.get(API_URL + '/food');
+    return response;
+  
 }
 
 export function useFoodData() {
@@ -22,6 +19,6 @@ export function useFoodData() {
 
     return {
         ...query,
-        data: query.data
+        data: query.data?.data
     };
 }
