@@ -1,6 +1,8 @@
 # Cardapio-Aplicação Frontend
 
  Este projeto é um simples protótipo de um Cardápio Digital desenvolvido durante tutorial no YouTube. A aplicação foi desenvolvida usando React, Typescript e React Query.
+
+ 
 💻 Requisitos
 Antes de iniciar, você deve ter o Node.js e o NPM instalados em sua máquina.
 
